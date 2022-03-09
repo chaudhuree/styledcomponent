@@ -1,19 +1,7 @@
-import style from "styled-components";
+import Example from "./Example";
 
-const BasicStyle = style.h2`
-  text-align:center;
-  padding:2rem;
-  background:skyblue;
-  color:white;
-  display:inline-block;
-
-`;
 function App() {
-  return (
-    <section style={{textAlign:"center"}}>
-      <BasicStyle>chaudhuree</BasicStyle>
-    </section>
-  );
+  return <Example></Example>;
 }
 
 export default App;
