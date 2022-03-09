@@ -4,8 +4,9 @@ import { DefaultButton } from './components/DefaultButton';
 function Example() {
   return (
     <section style={{ padding:'2rem' }}>
-      <BasicTitle>chaudhuree</BasicTitle>
-      <DefaultButton>hello</DefaultButton>
+      <BasicTitle>sOhan</BasicTitle>
+      <BasicTitle special>chaudhuree</BasicTitle>
+      <DefaultButton>❤ with love</DefaultButton>
     </section>
   );
 }
