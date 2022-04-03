@@ -13,3 +13,9 @@ display: block;
 width: 200px;
 margin: 1rem auto;
 `
+
+export const DefaultButton2=styled(DefaultButton)`
+background: #fff;
+color:#645cff;
+border:2px solid #645cff;
+`
