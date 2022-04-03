@@ -8,4 +8,9 @@ const BasicTitle = styled.h1`
   /* ternary operator ⬇⬇ */
   color: ${({special})=> special ? 'palegreen' : 'salmon'};
 `;
+export const Div = styled.div`
+  padding: 2rem;
+  text-align: center;
+
+`;
 export default BasicTitle;
