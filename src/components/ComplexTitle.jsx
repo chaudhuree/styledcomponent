@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 const Wrapper = styled.div`
+  /* global css can be overrided  */
+  .bg-red {
+    background-color: orange;
+  }
   padding: 2rem;
   h1 {
     text-align: center;
@@ -17,8 +21,9 @@ const Wrapper = styled.div`
 
 export default function ComplexTitle({ title }) {
   return (
-    <Wrapper>
-      <h1>{title}</h1>
+    // adding global css
+    <Wrapper className="bg-red">
+      <h1 className="text-white">{title}</h1>
       <div className="underline"></div>
     </Wrapper>
   );
