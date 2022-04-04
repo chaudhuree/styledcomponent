@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   /* global css can be overrided  */
   .bg-red {
-    background-color: orange;
+    background-color: var(--primary-color);
   }
   padding: 2rem;
   h1 {
