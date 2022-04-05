@@ -9,6 +9,7 @@ export const DefaultButton = styled.button`
   text-transform: capitalize;
   display: block;
   margin: 1rem auto;
+  /* css helper function */
   ${({ large }) =>
     large
       ? css`

@@ -1,7 +1,7 @@
 import React from "react";
 // import styled form macro to use css props
 import styled from "styled-components/macro";
-import { HipsterButton } from "./components/Buttons";
+import { DefaultButton, HipsterButton } from "./components/Buttons";
 
 const Wrapper = styled.section`
   padding: 2em;
@@ -20,6 +20,10 @@ function App() {
 <div css={`color:green;`}>
   <h1>chaudhuree</h1>
 </div>
+
+{/* css helper function */}
+<DefaultButton >Click Me</DefaultButton>
+<DefaultButton large>Click Me</DefaultButton>
     
     </Wrapper>
   );
