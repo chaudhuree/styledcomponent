@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import WrapperLoading from "./components/Loading";
 
 const Wrapper = styled.section`
   padding: 2em;
@@ -8,7 +9,7 @@ const Wrapper = styled.section`
 function App() {
   return (
     <Wrapper>
-      <h1>chaudhuree</h1>
+      <WrapperLoading></WrapperLoading>
     </Wrapper>
   );
 }
