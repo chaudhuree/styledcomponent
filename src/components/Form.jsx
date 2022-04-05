@@ -2,6 +2,8 @@ import React from 'react'
 import styled, { css } from 'styled-components/macro'
 
 const Button = styled.button.attrs((props) => {
+  // if button type is given, use it or default to 'button'
+  // there has two button here one has type 'submit' and other has no type given
   return { type: props.type || 'button' }
 })`
   background: var(--primary);
@@ -11,7 +13,8 @@ const Button = styled.button.attrs((props) => {
   cursor: pointer;
   ${({ type }) => {
     return (
-      type === 'submit' &&
+      // if type is submit, then add a submit button
+      type === 'submit' &&  
       css`
         display: block;
         width: 100%;
