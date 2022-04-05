@@ -1,5 +1,6 @@
 import React from "react";
-import styled from "styled-components";
+// import styled form macro to use css props
+import styled from "styled-components/macro";
 import { HipsterButton } from "./components/Buttons";
 
 const Wrapper = styled.section`
@@ -9,11 +10,16 @@ const Wrapper = styled.section`
 function App() {
   return (
     <Wrapper>
-     <HipsterButton>Click Me</HipsterButton>
+     <HipsterButton >Click Me</HipsterButton>
      {/* though hipster is a button element but as transform it into a link */}
-     <HipsterButton as='a' href="googl.com">Click Me</HipsterButton>
+     <HipsterButton css={`color:red;`} as='a' href="googl.com">Click Me</HipsterButton>
      <HipsterButton>Click Me</HipsterButton>
 
+{/* macro and css props */}
+{/* must use semicolon  */}
+<div css={`color:green;`}>
+  <h1>chaudhuree</h1>
+</div>
     
     </Wrapper>
   );
